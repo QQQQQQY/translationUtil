@@ -1,0 +1,6 @@
+<resources>
+    <string name="login_id">ID</string>
+    <string name="login_id_hint">Nombor</string>
+    <string name="login_pwd">Kata Laluan</string>
+    <string name="login_pwd_hint">Kata Laluan</string>
+</resources>

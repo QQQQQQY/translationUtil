@@ -25,3 +25,26 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply plugin: 'com.translation.plugin'
+
+translation {
+    sourcePath = "./translationRes/source/test.md"
+    targetPath = "./translationRes/target/"
+    androidKeyColumn = 2
+
+    language {
+        zh_cn {
+            columnNum = 3
+        }
+        zh_my {
+            columnNum = 4
+        }
+        en_my {
+            columnNum = 5
+        }
+        ms_my {
+            columnNum = 6
+        }
+    }
+}
